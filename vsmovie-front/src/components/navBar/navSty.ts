@@ -8,6 +8,7 @@ export const NavSty = styled.header`
 
     .vsmovie-nav-content{
         max-height:100%;
+        width:90%;
         display:flex;
         align-items : center;
         justify-content: space-between;
@@ -16,7 +17,7 @@ export const NavSty = styled.header`
     .vsmovie-contact-container{
         display:flex;
         align-items:center;
-        color: var(--color-text1)
+        color: var(--color-text1);
     };
 
     .vsmovie-contact-link{

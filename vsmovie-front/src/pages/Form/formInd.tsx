@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FormSty } from "./formSty";
 
 export const Forme=()=>{
@@ -34,7 +35,9 @@ export const Forme=()=>{
                             <button type="submit" className="btn btn-primary vsmovie-btn">Salvar</button>
                         </div>
                     </form >
-                    <button className="btn btn-primary vsmovie-btn mt-3">Cancelar</button>
+                    <Link to="/">
+                        <button className="btn btn-primary vsmovie-btn mt-3">Cancelar</button>
+                    </Link>
                 </div >
             </FormSty >
     )

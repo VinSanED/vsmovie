@@ -1,5 +1,6 @@
 import { FormSty } from "pages/Form/formSty";
 import MovieScore from "./movieScore/mscInd";
+import { Link } from "react-router-dom";
 
 export default function MovieCard(){
     const movie = {
@@ -15,7 +16,9 @@ export default function MovieCard(){
             <div className="vsmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
                 <MovieScore />
-                <div className="btn btn-primary vsmovie-btn">Avaliar</div>
+                <Link to={`/form/${movie.id}`}>
+                    <div className="btn btn-primary vsmovie-btn">Avaliar</div>
+                </Link>
             </div>
         </FormSty>
     )

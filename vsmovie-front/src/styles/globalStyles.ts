@@ -49,7 +49,8 @@ export const GlobalStyles = createGlobalStyle`
         list-style: none;
     }
     .container{
+        margin:0 auto;
         padding:"0.5rem";
-        max-width: 90%;
+        width: 90%;
     }
 `;
