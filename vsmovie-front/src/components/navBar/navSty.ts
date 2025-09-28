@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const NavSty = styled.header`
     background-color: var(--color-primary);
     height:6rem;
+    display: flex;
+    align-items: center;
 
     .vsmovie-nav-content{
         max-height:100%;

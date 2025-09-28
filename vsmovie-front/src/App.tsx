@@ -1,16 +1,18 @@
-
-import { ThemeProvider } from 'styled-components';
-import { theme1 } from './styles/theme';
-import { GlobalStyles } from './styles/globalStyles';
-import { Navbar } from './components/navBar/navInd';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Listing } from 'pages/Listing/listInd';
+import { Forme } from 'pages/Form/formInd';
 
 function App() {
   return (
-    <ThemeProvider theme={theme1}>
-      <GlobalStyles/>
-      <Navbar/>
-      <h1>helll</h1>
-    </ThemeProvider>
+    <BrowserRouter>
+        <Routes>
+            <Route path='/' element={<Listing/>}/>
+
+            <Route path='/form' >
+                <Route path=':moveId' element={<Forme/>}/>
+            </Route>
+        </Routes>
+    </BrowserRouter>
   );
 }
 
