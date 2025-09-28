@@ -1,18 +1,19 @@
 import { ReactComponent as Arrow } from "assets/img/arrow.svg"
+import { PagSty } from "./pagSty"
 
 export default function Pagination(){
     return(
-        <div className="dsmovie-pagination-container">
-            <div className="dsmovie-pagination-box">
-                <button className="dsmovie-pagination-button" disabled={true} >
-                    <Arrow />
+        <PagSty className="vsmovie-pagination-container">
+            <div className="vsmovie-pagination-box">
+                <button className="vsmovie-pagination-button" disabled={true} >
+                    <Arrow height={25} />
                 </button>
                 <p>{`${1} de ${3}`}</p>
-                <button className="dsmovie-pagination-button" disabled={false} >
-                    <Arrow className="dsmovie-flip-horizontal" />
+                <button className="vsmovie-pagination-button" disabled={false} >
+                    <Arrow height={25} className="vsmovie-flip-horizontal" />
                 </button>
             </div>
-        </div>
+        </PagSty>
     )
 
 }
