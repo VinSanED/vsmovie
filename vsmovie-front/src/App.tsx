@@ -1,13 +1,16 @@
 
-import logo from './logo.svg'
+import { ThemeProvider } from 'styled-components';
+import { theme1 } from './styles/theme';
+import { GlobalStyles } from './styles/globalStyles';
+import { Navbar } from './components/navBar/navInd';
 
 function App() {
   return (
-    <>
-      <img width={150} alt="logo" src={logo} />
-      <h1>page initialize</h1>
-      <a>aad</a>
-    </>
+    <ThemeProvider theme={theme1}>
+      <GlobalStyles/>
+      <Navbar/>
+      <h1>helll</h1>
+    </ThemeProvider>
   );
 }
 
