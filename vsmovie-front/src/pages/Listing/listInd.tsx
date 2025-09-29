@@ -18,7 +18,7 @@ export const Listing=()=>{
             number: 0,
             first: true,
             numberOfElements: 0,
-            empty: 0,
+            empty: true,
         }
     );
     const [pageNumber, setPageNumber] = useState(0)

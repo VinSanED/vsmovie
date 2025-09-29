@@ -1,11 +1,11 @@
-import { FormSty } from "pages/Form/formSty";
+import { FormSty } from "components/formCard/formSty";
 import MovieScore from "./movieScore/mscInd";
 import { Link } from "react-router-dom";
 import { Movie } from "models/movie";
 
 type Props = {
     movie:Movie;
-}s
+}
 export default function MovieCard({movie}:Props){
     return(
         <FormSty>

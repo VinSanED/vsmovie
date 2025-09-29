@@ -1,8 +1,9 @@
 import { ReactComponent as Arrow } from "assets/img/arrow.svg"
 import { PagSty } from "./pagSty"
+import { Dispatch, SetStateAction } from "react";
 
 type Props = {
-    setPageNumber : ()=>{};
+    setPageNumber : Dispatch<SetStateAction<number>>;
 }
 export default function Pagination({setPageNumber}:Props){
     return(
