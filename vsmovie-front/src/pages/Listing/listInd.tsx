@@ -30,7 +30,7 @@ export const Listing=()=>{
 
     return(
         <ListSty>
-            <Pagination setPageNumber={setPageNumber}/>
+            <Pagination page={moviePage} setPageNumber={setPageNumber}/>
             <GridContainer className="conteiner">
                 {moviePage.content.map(movie => (
                     <MovieCard key={movie.id} movie={movie} />
