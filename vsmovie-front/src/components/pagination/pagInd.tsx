@@ -1,7 +1,10 @@
 import { ReactComponent as Arrow } from "assets/img/arrow.svg"
 import { PagSty } from "./pagSty"
 
-export default function Pagination(){
+type Props = {
+    setPageNumber : ()=>{};
+}
+export default function Pagination({setPageNumber}:Props){
     return(
         <PagSty className="vsmovie-pagination-container">
             <div className="vsmovie-pagination-box">
