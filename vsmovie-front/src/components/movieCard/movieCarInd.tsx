@@ -12,7 +12,7 @@ export default function MovieCard({movie}:Props){
             <img className="vsmovie-movie-card-image" src={movie.image} alt={movie.title} />
             <div className="vsmovie-card-bottom-container">
                 <h3>{movie.title}</h3>
-                <MovieScore />
+                <MovieScore count={movie.count} score={movie.score} />
                 <Link to={`/form/${movie.id}`}>
                     <div className="btn btn-primary vsmovie-btn">Avaliar</div>
                 </Link>
